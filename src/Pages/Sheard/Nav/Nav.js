@@ -54,7 +54,7 @@ const Nav = () => {
                         {menuitem}
                     </ul>
                 </div>
-                <Link to="/" className="btn btn-ghost normal-case text-xl">ORG</Link>
+                <Link to="/" className=""><img className='h-[55px] w-[58px]' src="https://i.ibb.co/3pRKnP0/307314424-385836870431319-3448937172785325094-n-1-removebg-preview.png" alt="" /></Link>
             </div>
 
             <div className="navbar-end"><div className="navbar-center hidden lg:flex">
