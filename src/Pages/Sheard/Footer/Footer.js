@@ -26,7 +26,7 @@ const Footer = () => {
                     <Link className="link link-hover">Download</Link>
                 </div>
             </footer>
-            <h1 className="bg-base-200 text-base-content text-center" >Copyright © 2023 || Swopno Orjone Amra </h1>
+            <h1 className="bg-base-200 text-base-content text-center" >Copyright © 2023 || Swopno Orjone Amra || All rights reserved. </h1>
 
 
         </>

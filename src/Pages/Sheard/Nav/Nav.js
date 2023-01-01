@@ -166,7 +166,7 @@ function Nav() {
                 open={Boolean(anchorElmenu)}
                 onClose={handleCloseSubMenu}
             >
-                <Link to={'/'}>
+                <Link to={'/about'}>
                     <MenuItem onClick={handleCloseSubMenu}>
                         <Typography textAlign="center"><Button variant="contained">Our Organization</Button></Typography>
                     </MenuItem>
@@ -348,10 +348,11 @@ function Nav() {
                             open={Boolean(anchorElUser)}
                             onClose={handleCloseUserMenu}
                         >
-
-                            <MenuItem onClick={handleCloseUserMenu}>
-                                <Typography textAlign="center"><Button variant="contained">Log In</Button></Typography>
-                            </MenuItem>
+                            <Link to={'/login'}>
+                                <MenuItem onClick={handleCloseUserMenu}>
+                                    <Typography textAlign="center"><Button variant="contained">Log In</Button></Typography>
+                                </MenuItem>
+                            </Link>
                         </Menu>
                     </Box>
                 </Toolbar>
