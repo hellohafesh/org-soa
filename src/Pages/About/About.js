@@ -11,22 +11,21 @@ import MainFeaturedPost from './MainFeaturedPost';
 import FeaturedPost from './FeaturedPost';
 import Main from './Main';
 import Sidebar from './Sidebar';
-import Footer from './Footer';
 import post1 from './blog-post.1.md';
 import post2 from './blog-post.2.md';
 import post3 from './blog-post.3.md';
 
 const sections = [
-    { title: 'Technology', url: '#' },
-    { title: 'Design', url: '#' },
-    { title: 'Culture', url: '#' },
-    { title: 'Business', url: '#' },
-    { title: 'Politics', url: '#' },
-    { title: 'Opinion', url: '#' },
-    { title: 'Science', url: '#' },
-    { title: 'Health', url: '#' },
-    { title: 'Style', url: '#' },
-    { title: 'Travel', url: '#' },
+    //     { title: 'Technology', url: '#' },
+    //     { title: 'Design', url: '#' },
+    //     { title: 'Culture', url: '#' },
+    //     { title: 'Business', url: '#' },
+    //     { title: 'Politics', url: '#' },
+    //     { title: 'Opinion', url: '#' },
+    //     { title: 'Science', url: '#' },
+    //     { title: 'Health', url: '#' },
+    //     { title: 'Style', url: '#' },
+    //     { title: 'Travel', url: '#' },
 ];
 
 const mainFeaturedPost = {
@@ -87,17 +86,23 @@ const theme = createTheme();
 
 function About() {
     return (
-        <ThemeProvider theme={theme}>
+        <div className='my-4'>
             <CssBaseline />
             <Container maxWidth="lg">
-                <Header title="Blog" sections={sections} />
+                <Header title="About Us" sections={sections} />
                 <main>
+
+
                     <MainFeaturedPost post={mainFeaturedPost} />
+
+
                     <Grid container spacing={4}>
                         {featuredPosts.map((post) => (
                             <FeaturedPost key={post.title} post={post} />
                         ))}
                     </Grid>
+
+
                     <Grid container spacing={5} sx={{ mt: 3 }}>
                         <Main title="From the firehose" posts={posts} />
                         <Sidebar
@@ -109,11 +114,8 @@ function About() {
                     </Grid>
                 </main>
             </Container>
-            <Footer
-                title="Footer"
-                description="Something here to give the footer a purpose!"
-            />
-        </ThemeProvider>
+
+        </div>
     );
 }
 export default About;

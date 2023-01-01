@@ -13,7 +13,7 @@ function Header(props) {
     return (
         <React.Fragment>
             <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                <Button size="small">Subscribe</Button>
+                <Button size="small">Join Now</Button>
                 <Typography
                     component="h2"
                     variant="h5"
@@ -28,7 +28,7 @@ function Header(props) {
                     <SearchIcon />
                 </IconButton>
                 <Button variant="outlined" size="small">
-                    Sign up
+                    Policy
                 </Button>
             </Toolbar>
             <Toolbar
