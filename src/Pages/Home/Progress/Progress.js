@@ -45,13 +45,33 @@ const Progress = () => {
 
 
 
-            <div className='h-96 w-full ' style={{ backgroundImage: `url("https://as1.ftcdn.net/v2/jpg/03/20/76/68/1000_F_320766804_s59tRo6X9cxZL0g1s7bZEZA9STBCF3bx.jpg")`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div className='' style={{ backgroundImage: `url("https://as1.ftcdn.net/v2/jpg/03/20/76/68/1000_F_320766804_s59tRo6X9cxZL0g1s7bZEZA9STBCF3bx.jpg")`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <div className=" bg-gradient-to-tl from-current ">
+                    <div className=' h-auto w-full  bg-gradient-to-r from-current grid xl:grid-cols-4 2xl:grid-cols-4  lg:grid-cols-4 sm:grid-cols-1 grid-cols-1 justify-between item-center'>
 
-                <div className="radial-progress" style={{ "--value": 0 }}>0%</div>
-                <div className="radial-progress" style={{ "--value": 20 }}>20%</div>
-                <div className="radial-progress" style={{ "--value": 60 }}>60%</div>
-                <div className="radial-progress" style={{ "--value": 80 }}>80%</div>
-                <div className="radial-progress" style={{ "--value": 100 }}>100%</div>
+                        <div className='p-4 mx-auto'>
+                            <div className="radial-progress text-gray-300 font-bold text-2xl" style={{ "--value": "70", "--size": "12rem", "--thickness": "1rem" }}>70%</div>
+                            <h2 className='text-gray-300 mx-auto text-xl font-bold w-1/2 text-center mt-2'>VOLUNTEER ENGAGEMENT</h2>
+                        </div>
+                        <div className='p-4 mx-auto'>
+                            <div className="radial-progress text-gray-300 font-bold text-2xl" style={{ "--value": "70", "--size": "12rem", "--thickness": "1rem" }}>70%</div>
+                            <h2 className='text-gray-300 mx-auto text-xl font-bold w-1/2 text-center mt-2'>PATIENT RECOVERY RATE</h2>
+                        </div>
+                        {/* <div className='p-4 mx-auto'>
+                            <div className="radial-progress text-gray-300 font-bold text-2xl" style={{ "--value": "70", "--size": "12rem", "--thickness": "1rem" }}>70%</div>
+                            <h2 className='text-gray-300 text-xl font-bold w-1/2 text-center mt-2'>EMERGENCY SITUATION RESPONSE RATE</h2>
+                        </div> */}
+                        <div className='p-4 mx-auto'>
+                            <div className="radial-progress mx-auto text-gray-300 font-bold text-2xl" style={{ "--value": "70", "--size": "12rem", "--thickness": "1rem" }}>70%</div>
+                            <h2 className='text-gray-300 mx-auto text-xl font-bold w-1/2 text-center mt-2'>EMERGENCY RESPONSE </h2>
+                        </div>
+                        <div className='p-4 mx-auto'>
+                            <div className="radial-progress text-gray-300 font-bold text-2xl" style={{ "--value": "70", "--size": "12rem", "--thickness": "1rem" }}>70%</div>
+                            <h2 className='text-gray-300 mx-auto text-xl font-bold w-1/2 text-center mt-2'>STUDENTS PASSING RATE</h2>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
 

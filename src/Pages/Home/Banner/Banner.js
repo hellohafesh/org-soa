@@ -1,6 +1,5 @@
 import React from 'react';
 import './BAnner.css';
-
 const Banner = () => {
 
     return (
@@ -16,8 +15,6 @@ const Banner = () => {
                 </div>
             </div>
         </div>
-
-
 
     );
 };
